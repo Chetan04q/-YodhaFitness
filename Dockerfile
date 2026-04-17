@@ -1,8 +1,5 @@
-# Use PHP with Apache image
-FROM php:8.2-apache
+FROM nginx:alpine
 
-# Copy all website files into the Apache web root
-COPY . /var/www/html/
+COPY . /usr/share/nginx/html
 
-# Expose port 80 for web traffic
 EXPOSE 80
